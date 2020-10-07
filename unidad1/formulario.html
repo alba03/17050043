@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Formato de solicitud</h2>
+  <p>Llena los siguientes datos requeridos para la adopción</p>
+  <form class="form-inline" action="/action_page.php">
+    <div class="row px-5">
+      <div class="col-md-10">
+          <h2>Nota: Ser acertivo en sus respuestas<h2>
+      </div>
+  </div>
+
+  <div class="row px-5">
+    <div class="col-md-12 align-self-center">
+      <div class="card card-success">
+
+        <div class="card-header">
+          <h5 class="card-title">Ingresa los datos</h5>
+        </div>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="form-group col-md-3">
+                <strong>
+                  <p class="card-text">Matrícula del alumno: </p>
+                </strong>
+                <div class="input-group mb-3">
+                  <input type="text" name="matricula_alumno" class="form-control" placeholder="Matricula..." required>
+                </div>
+              </div>
+              <div class="form-group col-md-3">
+                <strong>
+                  <p class="card-text">Apellido Paterno: </p>
+                </strong>
+                <div class="input-group mb-3">
+                  <input type="text" name="apellido_paterno_alumno" class="form-control" placeholder="Apellido Paterno..." required>
+                </div>
+              </div>
+              <div class="form-group col-md-3">
+                <strong>
+                  <p class="card-text">Apellido Materno: </p>
+                </strong>
+                <input type="text" name="apellido_materno_alumno" class="form-control" placeholder="Apellido Materno...">
+              </div>
+              <div class="form-group col-md-3">
+                <strong>
+                  <p class="card-text">Nombre(s): </p>
+                </strong>
+                <input type="text" name="nombres_alumno" class="form-control" placeholder="Nombre(s)..." required>
+              </div>
+            </div>
+          </div>
+      <div class="card-footer">
+    <button type="submit" class="btn btn-primary">Guardar</button>
+  </form>
+</div>
+
+</body>
+</html>
