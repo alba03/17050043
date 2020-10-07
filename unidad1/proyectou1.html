@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+#menu-1, #menu-2, #menu-3, #menu-4{
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  height: 100%;
+  background-color: #101010dd;
+  text-align: center;
+  box-sizing: border-box;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.linkhome{
+  margin-top: 10%;
+}
+
+
+a{
+  text-decoration: none;
+  display: block;
+  padding: 3px;
+  color: white;
+  background-color: #101010ff;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg">
+      <div class="planet">
+        <img src="planetLobby.png" alt="planeta" onclick="openm1()"/>
+      </div>
+      <div class="buraco">
+        <img src="buracoLobby.png" alt="buraco negro" onclick="openm2()"/>
+      </div>
+      <div class="nave">
+        <img src="naveLobby.png" alt="nave" onclick="openm3()"/>
+      </div>
+      <div class="fenda">
+        <img src="rasgoLobby.png" alt="fenda" onclick="openm4()"/>
+      </div>
+    </div>
+
+    <!-- menu planeta -->
+    <div id="menu-1">
+      <div class="linkhome">
+        <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+        </style>
+        <div class="container mt-3">
+          <h2>Momentos agradables gracias a una mascota</h2>
+
+          <button type="button" id="myBtn" class="btn btn-success">cycle</button>
+          <button type="button" id="myBtn2" class="btn btn-danger">pause</button>
+
+          <!-- The carousel -->
+          <div id="myCarousel" class="carousel slide mt-4" data-interval="500">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li class="item1 active"></li>
+            <li class="item2"></li>
+            <li class="item3"></li>
+            <li class="item4"></li>
+            <li class="item5"></li>
+          </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="1.jpg" alt="Perrito" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="2.jpg" alt="Animales" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="3.jpg" alt="Familia" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="4.jpg" alt="Gato y PErro" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="5.jpg" alt="Patita" width="1100" height="500">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#myCarousel">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        </div>
+
+        <script>
+        $(document).ready(function(){
+          // Activate the Carousel, but pause it from the start
+          $("#myCarousel").carousel("pause");
+
+          // Click on the button to start sliding
+          $("#myBtn").click(function(){
+            $("#myCarousel").carousel("cycle");
+          });
+
+          // Click on the button to stop sliding
+          $("#myBtn2").click(function(){
+            $("#myCarousel").carousel("pause");
+          });
+
+          // Enable Carousel Indicators
+          $(".item1").click(function(){
+            $("#myCarousel").carousel(0);
+          });
+          $(".item2").click(function(){
+            $("#myCarousel").carousel(1);
+          });
+          $(".item3").click(function(){
+            $("#myCarousel").carousel(2);
+          });
+
+          // Enable Carousel Controls
+          $(".carousel-control-prev").click(function(){
+            $("#myCarousel").carousel("prev");
+          });
+          $(".carousel-control-next").click(function(){
+            $("#myCarousel").carousel("next");
+          });
+        });
+      </div>
+    </div>
+    <!-- menu buraco -->
+    <div id="menu-2">
+      <div class="linkhome">
+        <div class="link-3">
+          <a href="#" id="l3">arcos</a>
+        </div>
+      </div>
+    </div>
+    <!-- menu nave -->
+    <div id="menu-3">
+      <div class="linkhome">
+        <div class="link-4">
+          <a href="#" id="l4">casa</a>
+        </div>
+        <div class="link-5">
+          <a href="#" id="l5">simulação</a>
+        </div>
+        <div class="link-6">
+          <a href="#" id="l6">comércio</a>
+        </div>
+        <div class="link-7">
+          <a href="#" id="l7">campanha</a>
+        </div>
+      </div>
+    </div>
+    <!-- menu fenda -->
+    <div id="menu-4">
+      <div class="linkhome">
+        <div class="link-8">
+          <a href="#" id="l8">invasão</a>
+        </div>
+      </div>
+    </div>
+
+<script>
+var m1 = document.getElementById("menu-1");
+      var m2 = document.getElementById("menu-2");
+      var m3 = document.getElementById("menu-3");
+      var m4 = document.getElementById("menu-4");
+      //funções
+
+      function openm1(){
+        m1.style.width = "50%";
+      }
+
+      function openm2(){
+        m2.style.width = "50%";
+      }
+
+      function openm3(){
+        m3.style.width = "50%";
+      }
+
+      function openm4(){
+        m4.style.width = "50%";
+      }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+#menu-1, #menu-2, #menu-3, #menu-4{
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  height: 100%;
+  background-color: #101010dd;
+  text-align: center;
+  box-sizing: border-box;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.linkhome{
+  margin-top: 10%;
+}
+
+
+a{
+  text-decoration: none;
+  display: block;
+  padding: 3px;
+  color: white;
+  background-color: #101010ff;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg">
+      <div class="planet">
+        <img src="planetLobby.png" alt="planeta" onclick="openm1()"/>
+      </div>
+      <div class="buraco">
+        <img src="buracoLobby.png" alt="buraco negro" onclick="openm2()"/>
+      </div>
+      <div class="nave">
+        <img src="naveLobby.png" alt="nave" onclick="openm3()"/>
+      </div>
+      <div class="fenda">
+        <img src="rasgoLobby.png" alt="fenda" onclick="openm4()"/>
+      </div>
+    </div>
+
+    <!-- menu planeta -->
+    <div id="menu-1">
+      <div class="linkhome">
+        <div class="link-1">
+          <a href="#" id="l1">Coliseu</a>
+        </div>
+        <div class="link-2">
+          <a href="#" id="l2">Forja</a>
+        </div>
+      </div>
+    </div>
+    <!-- menu buraco -->
+    <div id="menu-2">
+      <div class="linkhome">
+        <div class="link-3">
+          <a href="#" id="l3">arcos</a>
+        </div>
+      </div>
+    </div>
+    <!-- menu nave -->
+    <div id="menu-3">
+      <div class="linkhome">
+        <div class="link-4">
+          <a href="#" id="l4">casa</a>
+        </div>
+        <div class="link-5">
+          <a href="#" id="l5">simulação</a>
+        </div>
+        <div class="link-6">
+          <a href="#" id="l6">comércio</a>
+        </div>
+        <div class="link-7">
+          <a href="#" id="l7">campanha</a>
+        </div>
+      </div>
+    </div>
+    <!-- menu fenda -->
+    <div id="menu-4">
+      <div class="linkhome">
+        <div class="link-8">
+          <a href="#" id="l8">invasão</a>
+        </div>
+      </div>
+    </div>
+
+<script>
+var m1 = document.getElementById("menu-1");
+      var m2 = document.getElementById("menu-2");
+      var m3 = document.getElementById("menu-3");
+      var m4 = document.getElementById("menu-4");
+      //funções
+
+      function openm1(){
+        m1.style.width = "50%";
+      }
+
+      function openm2(){
+        m2.style.width = "50%";
+      }
+
+      function openm3(){
+        m3.style.width = "50%";
+      }
+
+      function openm4(){
+        m4.style.width = "50%";
+      }
+</script>
+
+</body>
+</html>
